@@ -1,15 +1,10 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 
-export default function App({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
-      <style jsx global>{`
-        a {
-          color: tomato;
-        }
-      `}</style>
     </Layout>
   );
 }
